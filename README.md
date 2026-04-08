@@ -15,7 +15,7 @@
 
 본 저장소에는 바로 쾌적하게 사용할 수 있는 **사전 빌드(Pre-built)된 최적화 설치 파일**이 포함되어 있습니다. 복잡한 빌드 과정 없이 아래 절차만 따라해 주세요.
 
-1. 본 저장소의 `dist_setup/` 폴더 내에 있는 [**GoogleMessenger_Setup_v1.3.exe**](dist_setup/GoogleMessenger_Setup_v1.3.exe) 파일을 다운로드합니다.
+1. 본 저장소의 `dist_setup/` 폴더 내에 있는 [**GoogleMessenger_Setup_v1.4.exe**](dist_setup/GoogleMessenger_Setup_v1.4.exe) 파일을 다운로드합니다.
 2. 다운로드받은 파일을 더블클릭하여 PC에 1회 설치를 진행합니다.
 3. 바탕화면이나 Windows 시작 메뉴에 자동 생성된 **Google Messenger** 바로가기를 클릭해 앱을 켭니다.
 4. 초기 1회, 휴대전화 카메라로 화면의 QR 코드를 스캔하여 계정을 연동하면 향후 스마트하게 정보가 유지됩니다.
