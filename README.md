@@ -11,16 +11,21 @@
 - **중복 실행 제어(Single Instance IPC)**: 실수로 앱을 여러 번 실행 시 기존에 열려 있는 창을 맨 앞으로 강제 호출.
 - **가벼운 배포형**: Inno Setup 기반 최적화 및 압축 탑재로 매우 빠른 실행 보장.
 
-## 기술 스택
-- Python 3.11
-- PyQt6 / PyQt6-WebEngine
-- PyInstaller / Inno Setup 6
+## 📥 사전 빌드된 설치 파일 다운로드 및 사용 방법
 
-## 직접 빌드 및 설치 방법
-1. 필요 패키지 설치: `pip install PyQt6 PyQt6-WebEngine pyinstaller`
-2. `pyinstaller` 명령어를 통해 실행 파일 디렉토리 구성.
-3. 제공되는 `installer.iss` 스크립트를 Inno Setup Compiler로 열어 `GoogleMessenger_Setup_v*.exe` 컴파일.
-4. 산출된 셋업 파일을 통해 PC 설치 및 실행.
+본 저장소에는 바로 쾌적하게 사용할 수 있는 **사전 빌드(Pre-built)된 최적화 설치 파일**이 포함되어 있습니다. 복잡한 빌드 과정 없이 아래 절차만 따라해 주세요.
+
+1. 본 저장소의 `dist_setup/` 폴더 내에 있는 [**GoogleMessenger_Setup_v1.3.exe**](dist_setup/GoogleMessenger_Setup_v1.3.exe) 파일을 다운로드합니다.
+2. 다운로드받은 파일을 더블클릭하여 PC에 1회 설치를 진행합니다.
+3. 바탕화면이나 Windows 시작 메뉴에 자동 생성된 **Google Messenger** 바로가기를 클릭해 앱을 켭니다.
+4. 초기 1회, 휴대전화 카메라로 화면의 QR 코드를 스캔하여 계정을 연동하면 향후 스마트하게 정보가 유지됩니다.
+
+## 🛠 직접 개발 및 빌드 (개발자용)
+오픈 소스로 직접 데스크톱 앱을 재빌드하시려는 분들을 위한 안내입니다.
+
+1. Python 3.11 환경에서 필요 라이브러리 설치: `pip install PyQt6 PyQt6-WebEngine pyinstaller`
+2. `pyinstaller` 명령어를 이용해 1차적으로 의존성 빌드 추출 (예: `--windowed`)
+3. 프로젝트 내 동봉된 `installer.iss` 스크립트를 **Inno Setup 6**로 열어 새로운 `Setup.exe` 통합 셋업 파일을 컴파일 및 산출할 수 있습니다.
 
 ---
 © SaRaM_ida(망고아빠)
