@@ -2,7 +2,6 @@ __pycache__/
 *.pyc
 build/
 dist/
-dist_setup/
 *.spec
 .env
 crash_log.txt
